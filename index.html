@@ -46,6 +46,67 @@ font-size: 35px;
   <div id="commentsDisplay"></div>
 </div>
 
+<style>
+  #commentSection {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  h3 {
+    text-align: center;
+    color: #333;
+  }
+
+  #commentInput {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #commentsDisplay {
+    margin-top: 20px;
+  }
+
+  #commentsDisplay div {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #commentsDisplay div:nth-child(odd) {
+    background-color: #e9ecef;
+  }
+</style>
+
 <script>
   function addComment() {
     const comment = document.getElementById('commentInput').value;
