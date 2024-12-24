@@ -39,6 +39,27 @@ font-size: 35px;
    so the owner decided to think with a different way and he went to different conan groups and started inviting them to his group! <br>
    In addition, other than the comptitons he made he started writing cases for them! And thats the history of the <storng>"Detective Conan News"</storng>channel<br>
    and one day we will go through the history of our other channels.<strong> Are you convinced now to subscribe in my channel?</strong><a href="https://t.me/conanchannelall" target="_blank"> here is the link subscribe now</a></strong></p>
+<div id="commentSection">
+  <h3>Leave a Comment:</h3>
+  <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+  <button onclick="addComment()">Post Comment</button>
+  <div id="commentsDisplay"></div>
+</div>
+
+<script>
+  function addComment() {
+    const comment = document.getElementById('commentInput').value;
+    if (comment.trim()) {
+      const commentDiv = document.createElement('div');
+      commentDiv.textContent = comment;
+      document.getElementById('commentsDisplay').appendChild(commentDiv);
+      document.getElementById('commentInput').value = '';
+    } else {
+      alert('Comment cannot be empty.');
+    }
+  }
+</script>
+
 
 <h2> Our side channels </h2>
 <ol>
