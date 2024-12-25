@@ -6,13 +6,7 @@
     <title>Detective Conan</title>
 </head>
 <style>
-.first-channel-logo {
-font-family: "serif";
-}
-h1 {
-font-size: 35px;
-}
-        body {
+body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
@@ -29,23 +23,44 @@ font-size: 35px;
         }
 </style>
 <body>
-   <p class="counter">Visitor Count: <span id="visitor-count">Loading...</span></p>
+  <p class="counter">Visitor Count: <span id="visitor-count">Loading...</span></p>
 
     <script>
-        // Check if there's a count stored in localStorage
-        if (localStorage.getItem('visitorCount')) {
-            // If exists, get the current count and increment it
-            let count = parseInt(localStorage.getItem('visitorCount')) + 1;
-            localStorage.setItem('visitorCount', count);
-        } else {
-            // If not, set the initial count to 1
-            localStorage.setItem('visitorCount', 1);
+        // Function to get a cookie by name
+        function getCookie(name) {
+            let nameEQ = name + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
         }
 
-        // Display the visitor count on the page
+        // Function to set a cookie
+        function setCookie(name, value, days) {
+            let d = new Date();
+            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        // Check if the visitor has a cookie indicating they've already visited
+        if (!getCookie("visited")) {
+            // Visitor is new, increment the counter and set a "visited" cookie
+            if (localStorage.getItem('visitorCount')) {
+                let count = parseInt(localStorage.getItem('visitorCount')) + 1;
+                localStorage.setItem('visitorCount', count);
+            } else {
+                localStorage.setItem('visitorCount', 1);
+            }
+            setCookie("visited", "true", 365); // Cookie expires in 1 year
+        }
+
+        // Display the visitor count
         document.getElementById('visitor-count').innerText = localStorage.getItem('visitorCount');
     </script>
-
     <h1>Welcome Detective Conan Fans!</h1>
     <p>Hello everyone, first can you please guys make me a favour and subscribe in my Telegram channel</p>
     <p><a href="https://t.me/conanchannelall" target="_blank">Telegram.org</a></p> 
