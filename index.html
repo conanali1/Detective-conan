@@ -8,59 +8,9 @@
 <style>
 body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
-        .counter {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        #visitor-count {
-            font-size: 36px;
-            color: #ff4500;
-        }
+}
 </style>
 <body>
-  <p class="counter">Visitor Count: <span id="visitor-count">Loading...</span></p>
-
-    <script>
-        // Function to get a cookie by name
-        function getCookie(name) {
-            let nameEQ = name + "=";
-            let ca = document.cookie.split(';');
-            for (let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
-
-        // Function to set a cookie
-        function setCookie(name, value, days) {
-            let d = new Date();
-            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-            let expires = "expires=" + d.toUTCString();
-            document.cookie = name + "=" + value + ";" + expires + ";path=/";
-        }
-
-        // Check if the visitor has a cookie indicating they've already visited
-        if (!getCookie("visited")) {
-            // Visitor is new, increment the counter and set a "visited" cookie
-            if (localStorage.getItem('visitorCount')) {
-                let count = parseInt(localStorage.getItem('visitorCount')) + 1;
-                localStorage.setItem('visitorCount', count);
-            } else {
-                localStorage.setItem('visitorCount', 1);
-            }
-            setCookie("visited", "true", 365); // Cookie expires in 1 year
-        }
-
-        // Display the visitor count
-        document.getElementById('visitor-count').innerText = localStorage.getItem('visitorCount');
-    </script>
     <h1>Welcome Detective Conan Fans!</h1>
     <p>Hello everyone, first can you please guys make me a favour and subscribe in my Telegram channel</p>
     <p><a href="https://t.me/conanchannelall" target="_blank">Telegram.org</a></p> 
