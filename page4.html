@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS selectors</title>
+        <!-- Basic favicon for browsers -->
+        <link rel="icon" href="favicon.jpg" type="image/jpg">
+        
+        <!-- Apple Touch Icon (For iOS) -->
+        <link rel="apple-touch-icon" href="favicon.jpg">
+        
+        <!-- Favicon for Android and other devices -->
+        <link rel="icon" sizes="192x192" href="favicon.jpg">
+        
+        <!-- Favicon for multiple screen sizes -->
+        <link rel="icon" sizes="16x16" href="favicon.jpg">
+        <link rel="icon" sizes="32x32" href="favicon.jpg">
+        <link rel="icon" sizes="48x48" href="favicon.jpg">   
+    <style>
+         #title1 {
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color:white;
+      background-color:rgb(27, 27, 107);
+      padding-top: 100px;
+      padding-bottom: 100px;
+      text-align:center;
+      font-size: 60px;
+      margin:0%;
+    }
+.table-container {
+    overflow-x: auto; /* Ensures the table is scrollable on small screens */
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.styled-table thead tr {
+    background-color: cyan;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid cyan;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: cyan;
+}
+p {
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="title1">What is a CSS selector?</h1>
+    <p>A CSS selector is a rule or pattern that identifies one or more elements in an HTML document based on their tag name, attributes, ID, class, or other characteristics.</p>
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>selector</th>
+                    <th>Its function</th>
+                    <th>Importance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><pre>backgrpund-color:the color;</td>
+                    <td>its used to change the color of the background of the paragraph/sentence/word/letter</td>
+                    <td>Important</td>
+                </tr>
+                <tr>
+                    <td>color: the color;</td>
+                    <td>Its used to change the color of the text</td>
+                    <td>needed</td>
+                </tr>
+                <tr>
+                    <td>id="add a unique id"</td>
+                    <td>its used to specify a paragraph to change its properties</td>
+                    <td>very important</td>
+                </tr>
+                <tr class="active-row">
+                    <td>class="add a unique class"</td>
+                    <td>its used to select a paragraph to change its properties</td>
+                    <td>Important</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2> Explainations, notes, and warnings</h2>
+    <p> First of all these are obviously not all the CSS selectors, just some of them that are needed.</p>
+    <h4>Row 4 and 5: id/class</h4>
+    <p> You may ask what's the difference between both? The id is more specific than a class in other words, if you specified using an id you would be more specific than using a class</p>
+    <p>And I guess that's all! If you are interested in more information you may go search it up or wait for our updates!</p>
+</body>
+    </html>

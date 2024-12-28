@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags</title>
+        <!-- Basic favicon for browsers -->
+        <link rel="icon" href="favicon.jpg" type="image/jpg">
+        
+        <!-- Apple Touch Icon (For iOS) -->
+        <link rel="apple-touch-icon" href="favicon.jpg">
+        
+        <!-- Favicon for Android and other devices -->
+        <link rel="icon" sizes="192x192" href="favicon.jpg">
+        
+        <!-- Favicon for multiple screen sizes -->
+        <link rel="icon" sizes="16x16" href="favicon.jpg">
+        <link rel="icon" sizes="32x32" href="favicon.jpg">
+        <link rel="icon" sizes="48x48" href="favicon.jpg">    
+    <style>
+       #title1 {
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color:white;
+      background-color:rgb(27, 107, 38);
+      padding-top: 100px;
+      padding-bottom: 100px;
+      text-align:center;
+      font-size: 60px;
+      margin:0%;
+    }
+    .table-container {
+    overflow-x: auto; /* Ensures the table is scrollable on small screens */
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+#table1 {
+    font-size: auto;
+}
+h4 {
+    color: blue;
+}
+</style>
+</head>
+<body>
+    <h1 id="title1">What is an HTML tag?</h1>
+    <p>In <strong>HTML,</strong> a tag is a piece of code used to define the structure and content of a webpage. Tags are the building blocks of HTML and are written inside angle brackets (< >). They often come in pairs: an opening tag and a closing tag, with the content in between.</p>
+    <h3>Examples:</h3>
+    <link rel="stylesheet" href="styles.css">
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Its function</th>
+                    <th>Example</th>
+                    <th>usefull</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><pre><code>&lt;p&gt;</code></pre></td>
+                    <td>Its used for writing paragraphs</td>
+                    <td><pre><code>&lt;p&gt;thats a paragraph you should put <br>it here between the two tags&lt;/p&gt;</code></pre></td>
+                    <td>Very Important</td>
+                </tr>
+                <tr>
+                    <td><pre><code></code>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</pre></td>
+                    <td>From h1 till h6 are used for titles,and h1 is the biggest while h6 is the least</td>
+                    <td><pre><code>&lt;h1&gt; thats a title &lt;/h1&gt;</code></pre></td>
+                    <td>important</td>
+                </tr>
+                <tr>
+                    <td><pre><code>&lt;strong&gt;&lt;/strong&gt;</code></pre></td>
+                    <td>used to make a word/sentence/paragraph <strong>bold</strong></td>
+                    <td><pre><code>&lt;strong&gt;<strong>this sentence should be bold</strong>&lt;/strong&gt;</code></pre></td>
+                    <td> needed</td>
+                </tr>
+                <tr>
+                    <td><pre><code>&lt;em&gt; &lt;/em&gt;</code></pre></td>
+                    <td> used to make a word/sentence/paragraph <em>italic </em></td>
+                    <td><pre><code>&lt;em&gt; <em>this paragraph should be italics</em> &lt;/em&gt;</code></pre></td>
+                    <td>used</td>
+                </tr>
+                <tr>
+                  <td id="table1"><pre><code>  &lt;/head&gt;
+&lt;body&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Age&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre></td>
+<td> This code is for making a table and needs to be memorized</td>
+<td>no Example</td>
+<td>not really used</td>
+                </tr>
+                <tr class="active-row">
+                    <td>&lt;code&gt; and &lt;pre&gt;</td>
+                    <td>are used to show code on the webpage whatever you put between them appears in the website</td>
+                    <td>&lt;pre&gt;&lt;code&gt; &lt;p&gt; this should appear &lt;/code&gt;&lt;pre&gt;</td>
+                    <td> not needed (informational)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>Explainations, notes and warnings!</h2>
+    <p>first of all, these are not all the HTML tags I just gave some of them.</p>
+    <h4>The first row:<pre><code> &lt;p&gt;</code></pre></h4>
+    <p> the<pre><code>&lt;p&gt;</code></pre> tag needs to always end with <pre><code>&lt;/p&gt;</code></pre> like all tags, there is though some exception tags that dont end with<pre><code> &lt;/&gt;</code></pre> <a href="page3.html">for more information click here.</a></p>
+<h4>The second row: <pre><code>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code></pre></h4>
+<p>As for<pre><code>&lt;h1&gt;,&lt;h2&gt; and maybe &lt;h3&gt; are the most common used for titles, while the rest is just rare to use but just know it so if you needed to use it one day!</code></pre></p>
+<h4>The third raw: <pre><code>&lt;strong&gt;</code></pre></h4>
+<p> which is used for making a word or a sentence or a paragraph bold but usually paragraphs have another tag or we call it selector because its in CSS! <a href="page4.html">To explore more click me! </a></a><strong>And always dont forget to end it with <pre><code>&lt;/strong&gt;</code></pre></strong></p>
+<h4>The forth row: <pre><code>&lt;em&gt;</code></pre></h4>
+<p> Which is used to make a word or a sentence or a paragraph <em>italic</em>, and same as with bold there is something else used to make a whole paragraph <em>italic</em></p>
+<h4>The fifth row: Table</h4>
+<p><strong>obviously, table is not the command!</strong> But I can't put the whole code in here again that will just take more space from the website, so you can just go up find it in the table below!<br>
+Tables aren't really used though I am giving it for just more information, and i think its the only code thats hard to memorize in HTML but the rest is just easy as for me I memorized it from the first time I read it! I think I have no notes for that so lets get to the next row</p>
+<h4>row 5 (The last row): &lt;code&gt; and &lt;pre&gt;</h4>
+<p>These are used to write code and show it in your website which is not used except if this webstie is for teaching code or something like this website! Though you need to know that this will not work without using <pre><code>&lt;&+l+t+;&gt; and &lt;&+g+t+;&gt; add them (I didn't add them because they will appear for you as &lt;&gt;)</code></pre></p>
+<h2>Thank you for reading my article I hope it was helpful and yeah, goodluck!</h2>
+</body>
+</html>
